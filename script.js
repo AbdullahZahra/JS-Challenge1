@@ -1,27 +1,12 @@
-let markMass = 78;
-let markHeight = 1.69;
+const markMass = 78;
+const markHeight = 1.69;
 
-let johnMass = 92;
-let johnHeight = 1.95;
+const johnMass = 92;
+const johnHeight = 1.95;
 
-let markBMI = markMass / (markHeight ** 2);
+const markBMI = markMass / (markHeight ** 2);
+const johnBMI = johnMass / (johnHeight * johnHeight);
 
-console.log("Mark BMI = ", markBMI);
+const markHegherBMI = markBMI > johnBMI;
 
-let johnBMI = johnMass / (johnHeight * johnHeight);
-
-console.log("John BMI = ", markBMI);
-
-markMass = 95;
-markHeight = 1.88;
-
-johnMass = 85;
-markHeight = 1.76;
-
-markBMI = markMass / (markHeight ** 2);
-
-console.log("Mark BMI = ", markBMI);
-
-johnBMI = johnMass / (johnHeight * johnHeight);
-
-console.log("John BMI = ", markBMI);
+console.log(markBMI, johnBMI, markHegherBMI); 
